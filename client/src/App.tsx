@@ -8,6 +8,7 @@ import Hello from './component/Hello'
 import Game from './mainroutes/Game'
 import Signup from './mainroutes/Signup'
 import Login from './mainroutes/Login'
+import Home from './mainroutes/Home'
 export interface ServerToClientEvents {
   screenSwitch:(hit:string)=>void;
   backSwitch:(backback:string)=>void;
@@ -30,6 +31,7 @@ function App() {
    <>
     <BrowserRouter>
       <Routes>
+        <Route path = "/" element = {<Home></Home>}></Route>
         <Route path='/game' element = {<Game socket = {socket}></Game>}></Route>
         <Route path = "/signup" element = {<Signup></Signup>}></Route>
         <Route path = "/login" element = {<Login></Login>}></Route>
