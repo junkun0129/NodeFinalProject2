@@ -33,11 +33,11 @@ export const userStatusSlice = createSlice({
                 level:action.payload.status.level,
             }
         },
-        getAttackFromEnemy:(state, action:PayloadAction<{attack:Number}>)=>{
+        getAttackFromEnemy:(state, action:PayloadAction<{attack:number}>)=>{
             state.status.hp = state.status.hp - action.payload.attack;
             
         },
-        restoreHP:(state, action:PayloadAction<{hp:Number}>)=>{
+        restoreHP:(state, action:PayloadAction<{hp:number}>)=>{
             state.status.hp = action.payload.hp
         }
     }
