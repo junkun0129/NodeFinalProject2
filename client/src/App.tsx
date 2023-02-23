@@ -20,7 +20,7 @@ export interface ClientToServerEvents {
   encount:(encount:string)=>void;
   back:(backback:string)=>void;
 }
-const socket:Socket<ServerToClientEvents, ClientToServerEvents>= io("http://localhost:8080")
+const socket:Socket<ServerToClientEvents, ClientToServerEvents>= io("https://iwataniquest-servers.onrender.com")
 
 function App() {
   const [count, setCount] = useState(0)

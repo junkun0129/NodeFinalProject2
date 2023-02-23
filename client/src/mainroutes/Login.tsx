@@ -18,7 +18,7 @@ function Login() {
         setIsSubmit(true);
         setError("");
         console.log({email, password}, "this is it")
-        fetch("http://localhost:8080/auth/signin", {
+        fetch("https://iwataniquest-servers.onrender.com/auth/signin", {
             method:"POST",
             body: JSON.stringify({email, password}),
             headers: {"Content-Type":"application/json"}

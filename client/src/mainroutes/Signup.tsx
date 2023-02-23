@@ -24,7 +24,7 @@ function Signup() {
         console.log(JSON.stringify({email, name, password}))
         
 
-        fetch("http://localhost:8080/auth/signup",{
+        fetch("https://iwataniquest-servers.onrender.com/auth/signup",{
             method:"POST",
             body: JSON.stringify({email, password, name}),
             headers: { "Content-Type":"application/json"}
