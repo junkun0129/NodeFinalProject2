@@ -17,7 +17,7 @@ require("./src/util/soket")(http);
 
 
 app.get(("/"), (req, res, next)=>{
-    res.send("<h1>iwatani<h1>")
+    res.send("<h1>home<h1>")
 })
 
 app.use(("/auth"), require("./src/route/auth"))
