@@ -90,7 +90,7 @@ function Battle({socket}:socketType) {
             
             // if(nullOr1===2&&nullOr2===2&&nullOr3===2)setEnemy2(randomize(enemyArr));
             
-            fetch("http://localhost:8080/enemy/create", {
+            fetch("https://iwataniquest-servers.onrender.com/enemy/create", {
                 method:"GET",
                 headers: {"Content-Type":"application/json"} 
             }).then(async response=>{
